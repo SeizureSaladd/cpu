@@ -56,7 +56,7 @@ public class Cpu
     private void Log()
     {
         Console.WriteLine("Program counter: " + ProgramCounter);
-        Console.WriteLine("Instruction: " + GroupBits(Convert.ToString(Instruction, 2).PadLeft(16, '0')) + " " + new Instruction(Instruction).Opcode);
+        Console.WriteLine("Instruction: " + GroupBits(Convert.ToString(Instruction, 2).PadLeft(16, '0')) + new Instruction(Instruction).Opcode);
         Console.WriteLine("Address: " + GroupBits(Convert.ToString(Addr, 2).PadLeft(16, '0')));
         Console.WriteLine("Data: " + GroupBits(Convert.ToString(Data, 2).PadLeft(16, '0')));
 

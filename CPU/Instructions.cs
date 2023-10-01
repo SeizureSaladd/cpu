@@ -31,6 +31,7 @@ public class Instructions
     public Instructions(Cpu cp)
     {
         _cpu = cp;
+        
         _opcodeToFunctionMap = new Dictionary<Opcode, OpcodeFunction?>
         {
             { Opcode.Read, Read },

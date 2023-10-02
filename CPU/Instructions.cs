@@ -130,7 +130,7 @@ public class Instructions
 
     private void Increment(ushort[] args, ushort data)
     {
-        ++_cpu.Registers[args[1]];
+        _cpu.Registers[args[1]]++;
     }
 
     private void Not(ushort[] args, ushort data)
